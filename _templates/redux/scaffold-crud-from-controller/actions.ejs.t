@@ -39,7 +39,7 @@ export const tryGet<%= h.changeCase.title(model) %>ById = (id: string) => async 
 	} catch (err) {
 		console.error(err);
 		dispatch(get<%= h.changeCase.title(model) %>ByIdFailure());
-		dispatch(enqueueSnackbar(new DismissibleSnackbar('Could not get <%= h.changeCase.title(model) %>s.', SnackbarType.Error)));
+		dispatch(enqueueSnackbar(new DismissibleSnackbar('Could not get <%= h.changeCase.title(model) %>.', SnackbarType.Error)));
 	}
 };
 
